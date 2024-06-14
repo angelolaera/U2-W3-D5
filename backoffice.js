@@ -12,7 +12,7 @@ const handleSubmit = (e) => {
 };
 
 window.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
+  const form = document.getElementById("myForm");
 
   form.onsubmit = handleSubmit;
 });
