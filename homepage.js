@@ -26,6 +26,7 @@ window.addEventListener("DOMContentLoaded", function () {
           card.classList.add("w-150");
 
           const img = document.createElement("img");
+          img.style.objectFit = "contain";
           img.src = product.imageUrl;
 
           const cardBody = document.createElement("div");
