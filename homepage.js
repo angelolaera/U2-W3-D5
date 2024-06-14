@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function () {
           cardBody.classList.add("card-body");
 
           const button = document.createElement("button");
-          button.classList.add("btn", "btn-primary");
+          button.classList.add("btn", "btn-primary", "mt-3");
           button.innerText = "Scarta";
           button.addEventListener("click", (event) => {
             event.target.closest(".col").remove();
@@ -46,8 +46,13 @@ window.addEventListener("DOMContentLoaded", function () {
           const price = document.createElement("p");
           price.textContent = "€" + product.price + ",00";
 
+          const details = document.createElement("a");
+          details.setAttribute("href", "./details.html");
+          details.textContent = "Dettaglio Prodotto";
+
           cardBody.appendChild(title);
           cardBody.appendChild(price);
+          cardBody.appendChild(details);
           cardBody.appendChild(button);
           card.appendChild(img);
           card.appendChild(cardBody);
